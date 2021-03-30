@@ -35,11 +35,8 @@ def core_game(old_random):
     if old_random_word == user_input:
         wpm += 1
         cpm += len(old_random_word)
-    print(user_input + ' user')
-    print(old_random_word + ' random')
     game_button['command'] = lambda: core_game(old_random=random_word)
     text.delete(0, 'end')
-    print(wpm)
 
 
 def count_down(count):
